@@ -1,0 +1,120 @@
+// WIDTH AND HEIGHT
+$full-w: 100vw;
+$full-h: 100vh;
+$boxed: 75%;
+
+// FONT&COLOR
+$font-stack: Garamond, serif;
+$first-palette-color: #16193B;
+$second-palette-color: #35478C;
+$third-palette-color: #4E7AC7;
+$fourth-palette-color: #7FB2F0;
+$fifth-palette-color: #ADD5F7;
+
+// FIRST BUTTON
+ $first-b-w: 300px;
+ $first-b-p: 15px 25px;
+ $first-b-f-s: 20px;
+ $first-b-border: 2px solid #35478C;
+ $first-b-br: 50px;
+ $first-b-c:#35478C;
+
+
+// SECOND BUTTON
+ $sec-b-w: 300px;
+ $sec-b-p: 15px 25px;
+ $sec-b-f-s: 15px;
+ $sec-b-border: none;
+ $sec-b-br: 30px;
+ $sec-b-c:white;
+ $sec-b-bg:#35478C;
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 100% $font-stack;
+}
+
+.container{
+    background-color: $fourth-palette-color;
+    width: $full-w;
+    height: $full-h;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    width: $full-w;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.col{
+    width: $boxed;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+h1{
+    color: $first-palette-color;
+    font-size: 80px;
+    margin: 10px 0;
+}
+
+p{
+    color: $second-palette-color;
+    font-size: 40px;
+}
+
+.ciao > button{
+    width: $first-b-w;
+    background-color: transparent;
+    padding: $first-b-p;
+    border: $first-b-border ;
+    border-radius: $first-b-br;
+    color: $first-b-c;
+    font-size: $first-b-f-s;
+    margin: 20px 0;
+}
+
+.ciao > button:hover{
+    background-color: $sec-b-bg;
+    border: $sec-b-border ;
+    border-radius: $sec-b-br;
+    color: $sec-b-c;
+    margin: 20px 0;
+}
+
+.bye > button{
+    width: $sec-b-w;
+    background-color: $sec-b-bg;
+    padding: $sec-b-p;
+    border: $sec-b-border ;
+    border-radius: $sec-b-br;
+    color: $sec-b-c;
+    font-size: $sec-b-f-s;
+    margin: 20px 0;
+}
+
+.bye > button:hover{
+    background-color: transparent;
+    border: $first-b-border ;
+    border-radius: $first-b-br;
+    color: $first-b-c;
+    margin: 20px 0;
+}
